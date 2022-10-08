@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="form-wrap">
+            <h2>Formulaire</h2>
+            <form id="htmlform" action="form.php" method="post">
+
+                <div class="form-item">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name" placeholder="" required autofocus>
+                </div>
+
+                <div class="form-item">
+                    <label for="date">Date de naissance</label>
+                    <input type="text" id="date" name="date" placeholder="" required>
+                </div>
+
+                <div class="form-item message">
+                    <label for="message">Adresse</label>
+                    <textarea name="adress" id="message" placeholder=""
+                        required></textarea>
+                </div>
+                <!-- SUBMIT -->
+                <div class="form-item">
+                    <label for="valider"> Valider</label>
+                    <button type="submit" name="valider">Envoyer</button>
+
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
