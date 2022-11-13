@@ -4,7 +4,7 @@
         //connection à la BDD
        
         try{
-            $bdd = new PDO('mysql:host=localhost:8889;dbname=testformulaire;charset=utf8;', 'root', 'root');
+            $bdd = new PDO('mysql:host=localhost:;dbname=testformulaire;charset=utf8;', '', '');
 
             //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username,$password);
             //$conn->setAttribute(PDO::ATT_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -16,9 +16,9 @@
 
         
         //$reponse = $bdd->query('SELECT * FROM contact');
-$name = $_POST['name'];
-$date = $_POST['date'];
-$adress = $_POST['adress'];
+        $name = $_POST['name'];
+        $date = $_POST['date'];
+        $adress = $_POST['adress'];
 
          if(isset($_POST['valider']))
          {
